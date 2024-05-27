@@ -12,4 +12,8 @@ Measurement of success: Delivering the coffee
 
 *Risk:* Low
 
+<<<<<<< HEAD
 *Estimate:*
+=======
+*Estimate:*
+>>>>>>> ba87f1be074190b4e2399dccc666705b8b241c04
