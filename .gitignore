@@ -1,3 +1,7 @@
 /ros2_ast/build
 /ros2_ast/install
 /ros2_ast/log
+
+/ros1_smach/build
+/ros1_smach/devel
+
