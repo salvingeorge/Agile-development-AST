@@ -1,19 +1,17 @@
-# User Story 1
+## User Story 1: Place Coffee Order via Human-Robot Communication
 
-US01. Coffee delivery main action
+**Title**: Place Coffee Order via Human-Robot Communication
 
-As a user, I want the robot to bring coffee from the coffee machine so that it delivers the coffee to my place. 
+**Description**: As a customer, I want to place a coffee order directly by communicating with the robot so that I can get my favorite coffee delivered to me without using an app.
 
-Acceptance criteria: The robot should be in a standby state ready to provide the service.
+**Priority**: High
 
-Measurement of success: Delivering the coffee
+**Risk**: Medium
 
-*Priority:* High
+**Estimate**: 1 week
 
-*Risk:* Low
-
-<<<<<<< HEAD
-*Estimate:*
-=======
-*Estimate:*
->>>>>>> ba87f1be074190b4e2399dccc666705b8b241c04
+**Acceptance Criteria**:
+- The robot should understand spoken coffee orders and preferences.
+- The robot should confirm the order details.
+- The robot should provide an estimated delivery time.
+- The robot should send a confirmation notification after the order is placed.
