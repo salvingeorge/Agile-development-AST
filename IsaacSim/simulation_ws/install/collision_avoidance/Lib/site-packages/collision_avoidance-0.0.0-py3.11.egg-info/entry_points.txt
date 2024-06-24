@@ -1,0 +1,2 @@
+[console_scripts]
+avoid_collision = collision_avoidance.avoid_collision:main
