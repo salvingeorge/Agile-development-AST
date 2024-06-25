@@ -5,3 +5,24 @@
 /ros1_smach/build
 /ros1_smach/devel
 
+/ros2_smach/build
+/ros2_smach/install
+/ros2_smach/log
+
+IsaacSim/simulation_ws/build
+
+
+IsaacSim/simulation_ws/install
+IsaacSim/simulation_ws/log
+IsaacSim/simulation_ws/build/collision_avoidance/install.log
+IsaacSim/simulation_ws/build/collision_avoidance/build/lib/collision_avoidance/avoid_collision.py
+IsaacSim/simulation_ws/build/collision_avoidance/collision_avoidance.egg-info/entry_points.txt
+IsaacSim/simulation_ws/build/collision_avoidance/collision_avoidance.egg-info/PKG-INFO
+IsaacSim/simulation_ws/build/collision_avoidance/collision_avoidance.egg-info/SOURCES.txt
+IsaacSim/simulation_ws/build/collision_avoidance/prefix_override/sitecustomize.py
+IsaacSim/simulation_ws/install/local_setup.ps1
+IsaacSim/simulation_ws/install/setup.ps1
+IsaacSim/simulation_ws/install/collision_avoidance/share/collision_avoidance/package.dsv
+IsaacSim/simulation_ws/install/collision_avoidance/share/collision_avoidance/package.ps1
+IsaacSim/simulation_ws/install/collision_avoidance/share/collision_avoidance/hook/pythonpath.dsv
+IsaacSim/simulation_ws/install/collision_avoidance/share/collision_avoidance/hook/pythonpath.ps1
