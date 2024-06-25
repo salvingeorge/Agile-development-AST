@@ -10,6 +10,8 @@ setup.py
 ../../build/collision_avoidance/collision_avoidance.egg-info/zip-safe
 collision_avoidance/__init__.py
 collision_avoidance/avoid_collision.py
+collision_avoidance/test.py
+collision_avoidance/utilities.py
 resource/collision_avoidance
 test/test_copyright.py
 test/test_flake8.py

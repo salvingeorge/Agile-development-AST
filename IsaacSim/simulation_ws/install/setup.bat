@@ -7,7 +7,7 @@
 
 :: source chained prefixes
 call:_colcon_prefix_chain_bat_call_script "C:\Users\pmran\anaconda3\envs\ros_env\Library\local_setup.bat"
-call:_colcon_prefix_chain_bat_call_script "C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\\local_setup.bat"
+call:_colcon_prefix_chain_bat_call_script "C:\Users\pmran\Documents\MAS\3rd_semester\AST\lab_class\Agile-development\IsaacSim\simulation_ws\install\\local_setup.bat"
 
 :: source this prefix
 call:_colcon_prefix_chain_bat_call_script "%%~dp0local_setup.bat"

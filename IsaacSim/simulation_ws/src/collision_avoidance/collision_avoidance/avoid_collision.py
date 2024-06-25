@@ -77,16 +77,15 @@ class AvoidCollision(Node):
         self.publisher.publish(msg)
         self.get_logger().info('moving')
 
-    def move_left(self, linear_x=0.0, angular_z=-0.5):
+    def move_left(self, linear_x=0.0, angular_z=0.5):
         msg = Twist()
         msg.linear.x = linear_x
         msg.angular.z = angular_z
         self.publisher.publish(msg)
         self.get_logger().info('moving left')
-    def move_right(self, linear_x=0.5, angular_z=-0.5):
+    def move_right(self, linear_x=0.0, angular_z=-0.5):
         msg = Twist()
         msg.linear.x = linear_x
-        msg.angular.z = angular_z
         self.publisher.publish(msg)
         self.get_logger().info('moving right')
 

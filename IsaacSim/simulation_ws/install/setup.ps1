@@ -23,7 +23,7 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "C:\Users\pmran\anaconda3\envs\ros_env\Library\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "C:\Users\pmran\Documents\MAS\3rd_semester\AST\lab_class\Agile-development\IsaacSim\simulation_ws\install\\local_setup.ps1"
 
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)
