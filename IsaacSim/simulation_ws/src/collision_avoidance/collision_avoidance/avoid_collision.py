@@ -9,7 +9,7 @@ from geometry_msgs.msg import Twist
 from collision_avoidance.utilities import *
 
 class AvoidCollision(Node):
-    def __init__(self, safe_d=1):
+    def __init__(self, safe_d=2):
         super().__init__('avoid_collision')
         self.subscription = self.create_subscription(
             LaserScan,
@@ -58,10 +58,6 @@ class AvoidCollision(Node):
         
         
         if minimum_distance < self.safe_distance:
-            self.stop()
-            
-        elif minimum_distance < 2.0:
-  
             self.move_left()
 
         else:
@@ -81,7 +77,7 @@ class AvoidCollision(Node):
         self.publisher.publish(msg)
         self.get_logger().info('moving')
 
-    def move_left(self, linear_x=0.5, angular_z=-0.5):
+    def move_left(self, linear_x=0.0, angular_z=-0.5):
         msg = Twist()
         msg.linear.x = linear_x
         msg.angular.z = angular_z
