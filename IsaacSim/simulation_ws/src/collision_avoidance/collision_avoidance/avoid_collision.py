@@ -55,13 +55,14 @@ class AvoidCollision(Node):
 
 
         self.get_logger().info("min distance: %f" % minimum_distance)
+        
+        
         if minimum_distance < self.safe_distance:
             self.stop()
-        
-
-        if slope <-0.01 and minimum_distance < 2:
+            
+        elif slope <-0.1 and minimum_distance < 2:
             self.turn_left()
-        elif slope > 0.01 and minimum_distance < 2:
+        elif slope > 0.1 and minimum_distance < 2:
             self.turn_right()
         else:
             self.move()
