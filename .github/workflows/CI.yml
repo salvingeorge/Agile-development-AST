@@ -20,6 +20,7 @@ jobs:
       uses: ros-tooling/setup-ros@v0.3
       with:
         required-ros-distributions: humble
+
     - name: Install dependencies
       run: |
         sudo apt-get update && sudo apt-get install -y \
@@ -27,7 +28,10 @@ jobs:
         python3-vcstool \
         ros-humble-smach-ros \
         ros-humble-ament-cmake \
-        ros-humble-launch-testing-ament-cmake
+        ros-humble-launch-testing-ament-cmake \
+        python3-pip
+        pip3 install catkin_pkg
+        
     - name: Setup ROS 2 workspace
       run: |
         mkdir -p ~/ros2_smach/src
