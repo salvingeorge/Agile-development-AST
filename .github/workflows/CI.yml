@@ -12,11 +12,12 @@ on:
 jobs:
   built-and-test:
     runs-on: ubuntu-22.04
-    strategy:
-      fail-fast: false
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
     - name: Setup ROS 2
-      uses: ros-tooling/setup-ros@0.0.15
+      uses: ros-tooling/setup-ros@0.3
       with:
         required-ros-distributions: humble
     - name: Install dependencies
