@@ -31,6 +31,8 @@ jobs:
         ros-humble-launch-testing-ament-cmake \
         python3-pip
         pip3 install catkin_pkg
+        pip3 uninstall -y em
+        pip3 install empy
         
     - name: Setup ROS 2 workspace
       run: |
