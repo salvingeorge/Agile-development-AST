@@ -49,3 +49,10 @@ IsaacSim/simulation_ws/log/build_2024-06-25_13-05-28/collision_avoidance/stderr.
 IsaacSim/simulation_ws/log/build_2024-06-25_13-05-28/collision_avoidance/stdout_stderr.log
 IsaacSim/simulation_ws/log/build_2024-06-25_13-05-28/collision_avoidance/stdout.log
 IsaacSim/simulation_ws/log/build_2024-06-25_13-05-28/collision_avoidance/streams.log
+
+
+
+ros2_smach/build
+ros2_smach/install
+ros2_smach/log
+
