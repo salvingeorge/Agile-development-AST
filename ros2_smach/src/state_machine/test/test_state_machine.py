@@ -1,14 +1,14 @@
 import unittest
 import rclpy
 
-from rclpy.node import Node
+#from rclpy.node import Node
 from std_msgs.msg import Float32
 from sensor_msgs.msg import LaserScan
-from geometry_msgs.msg import Twist
+#from geometry_msgs.msg import Twist
 
-from smach import StateMachine
+#from smach import StateMachine
 
-from state_machine.state_machine import MonitorBatteryAndCollision, Move, RotateBase, StopMotion, main
+from state_machine.state_machine import MonitorBatteryAndCollision, Move, RotateBase, StopMotion
 
 '''refered from https://answers.ros.org/question/356180/ros2-creating-integration-tests-for-python-nodes/'''
 
