@@ -1,0 +1,50 @@
+# This workflow will build a golang project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
+
+name: Go
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  built-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+    - name: Setup ROS 2
+      uses: ros-tooling/setup-ros@0.0.15
+    with:
+      required-ros-distributions: humble
+
+    - name: Run Tests
+      uses: ros-tooling /action-ros-ci@0.0.13
+      with:
+        package-name: ros2_smach
+    - name: Upload Logs
+      uses: actions/upload-artifact@v1
+      with:
+        name: colcon-logs
+        path: ros2_smach/log
+      if: always()
+
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v4
+
+  #   - name: Set up Go
+  #     uses: actions/setup-go@v4
+  #     with:
+  #       go-version: '1.20'
+
+  #   - name: Build
+  #     run: go build -v ./...
+
+  #   - name: Test
+  #     run: go test -v ./...
+
+
