@@ -77,7 +77,7 @@ class RotateBase(smach.State):
 
 
 class StopMotion(smach.State):
-    def __init__(self):
+    def __init__(self, node):
         smach.State.__init__(self, outcomes=['stop'])
         self.node = node
         self.pub = self.node.create_publisher(Twist, 'cmd_vel', 10)
