@@ -41,14 +41,15 @@ jobs:
         source /opt/ros/humble/setup.bash
         cd ~/ros2_smach
         colcon build --packages-select state_machines
+    - name: Ensuring log directory exists
+      run: mkdir -p ~/ros2_smach/log/latest_test
 
     - name: Run Tests
       run: |
         source /opt/ros/humble/setup.bash
         cd ~/ros2_smach
         colcon test --packages-select state-machine
-        colcon test-result --all
-
+        colcon test-result --all 
     - name: Upload Logs
       if: always()
       uses: actions/upload-artifact@v2
