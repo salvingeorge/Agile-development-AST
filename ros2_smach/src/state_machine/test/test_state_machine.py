@@ -40,6 +40,21 @@ class TestSmachStateMachine(unittest.TestCase):
         state.collision_callback(msg)
         self.assertEqual(state.collision_distance, 1.0)
 
+    def test_movement(self):
+        self.test_node.get_logger().info('Testing movement')
+        state = Move(self.test_node)
+        self.assertEqual(state.execute(None), 'moving')
+
+    def test_rotate_base(self):
+        self.test_node.get_logger().info('Testing rotation')
+        state = RotateBase(self.test_node)
+        self.assertEqual(state.execute(None), 'rotating')
+
+    def test_stop_motion(self):
+        self.test_node.get_logger().info('Testing stopping motion')
+        state = StopMotion(self.test_node)
+        self.assertEqual(state.execute(None), 'stop')
+
     
 if __name__ == '__main__':
     unittest.main()
