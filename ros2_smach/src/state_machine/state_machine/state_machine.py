@@ -2,12 +2,14 @@
 
 import rclpy
 from rclpy.node import Node
-import smach
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Float32
 from sensor_msgs.msg import LaserScan
+import smach
 
 # Define state MonitorBatteryAndCollision
+
+
 class MonitorBatteryAndCollision(smach.State):
     def __init__(self, node):
         smach.State.__init__(self, outcomes=['low_battery', 'collision', 'healthy'])
@@ -16,8 +18,10 @@ class MonitorBatteryAndCollision(smach.State):
         self.distance_threshold = 1
         self.battery_level = None
         self.collision_distance = None
-        self.battery_sub = self.node.create_subscription(Float32, 'battery_level_topic', self.battery_callback, 10)
-        self.collision_sub = self.node.create_subscription(LaserScan, '/scan', self.collision_callback, 10)
+        self.battery_sub = self.node.create_subscription(
+            Float32, 'battery_level_topic', self.battery_callback, 10)
+        self.collision_sub = self.node.create_subscription(
+            LaserScan, '/scan', self.collision_callback, 10)
 
     def battery_callback(self, msg):
         self.node.get_logger().info(f'Received battery level: {msg.data}')
@@ -40,6 +44,7 @@ class MonitorBatteryAndCollision(smach.State):
         else:
             return 'healthy'
 
+
 class Move(smach.State):
     def __init__(self, node):
         smach.State.__init__(self, outcomes=['moving'])
@@ -53,6 +58,7 @@ class Move(smach.State):
         twist.angular.z = 0.0
         self.pub.publish(twist)
         return 'moving'
+
 
 # Define state RotateBase
 class RotateBase(smach.State):
@@ -69,6 +75,7 @@ class RotateBase(smach.State):
         self.pub.publish(twist)
         return 'rotating'
 
+
 class StopMotion(smach.State):
     def __init__(self, node):
         smach.State.__init__(self, outcomes=['stop'])
@@ -83,6 +90,7 @@ class StopMotion(smach.State):
         self.pub.publish(twist)
         return 'stop'
 
+
 def main():
     rclpy.init()
     node = Node('smach_example_state_machine')
@@ -93,20 +101,21 @@ def main():
     # Open the container
     with sm:
         # Add states to the container
-        smach.StateMachine.add('MonitorBatteryAndCollision', MonitorBatteryAndCollision(node), 
-                               transitions={'low_battery':'RotateBase', 'collision':'StopMotion', 'healthy':'Move'})
-        smach.StateMachine.add('RotateBase', RotateBase(node), 
-                               transitions={'rotating':'MonitorBatteryAndCollision'})
-        smach.StateMachine.add('StopMotion', StopMotion(node), 
-                               transitions={'stop':'MonitorBatteryAndCollision'})
-        smach.StateMachine.add('Move', Move(node), 
-                               transitions={'moving':'MonitorBatteryAndCollision'})
+        smach.StateMachine.add('MonitorBatteryAndCollision', MonitorBatteryAndCollision(node),
+                               transitions={'low_battery': 'RotateBase', 'collision': 'StopMotion', 'healthy': 'Move'})
+        smach.StateMachine.add('RotateBase', RotateBase(node),
+                               transitions={'rotating': 'MonitorBatteryAndCollision'})
+        smach.StateMachine.add('StopMotion', StopMotion(node),
+                               transitions={'stop': 'MonitorBatteryAndCollision'})
+        smach.StateMachine.add('Move', Move(node),
+                               transitions={'moving': 'MonitorBatteryAndCollision'})
 
     # Execute SMACH plan
     outcome = sm.execute()
 
     node.destroy_node()
     rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

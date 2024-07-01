@@ -1,0 +1,28 @@
+[4.047s] Invoking command in 'C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\src\collision_avoidance': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\build\collision_avoidance\prefix_override;C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\collision_avoidance\Lib\site-packages;%PYTHONPATH% C:\Users\pmran\anaconda3\envs\ros_env\python.exe -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ..\..\build\collision_avoidance build --build-base C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\build\collision_avoidance\build install --record C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\build\collision_avoidance\install.log --single-version-externally-managed install_data
+[5.297s] running egg_info
+[5.359s] writing ..\..\build\collision_avoidance\collision_avoidance.egg-info\PKG-INFO
+[5.359s] writing dependency_links to ..\..\build\collision_avoidance\collision_avoidance.egg-info\dependency_links.txt
+[5.359s] writing entry points to ..\..\build\collision_avoidance\collision_avoidance.egg-info\entry_points.txt
+[5.359s] writing requirements to ..\..\build\collision_avoidance\collision_avoidance.egg-info\requires.txt
+[5.359s] writing top-level names to ..\..\build\collision_avoidance\collision_avoidance.egg-info\top_level.txt
+[5.484s] reading manifest file '..\..\build\collision_avoidance\collision_avoidance.egg-info\SOURCES.txt'
+[5.500s] writing manifest file '..\..\build\collision_avoidance\collision_avoidance.egg-info\SOURCES.txt'
+[5.500s] running build
+[5.500s] running build_py
+[5.500s] copying collision_avoidance\avoid_collision.py -> C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\build\collision_avoidance\build\lib\collision_avoidance
+[5.500s] copying collision_avoidance\__init__.py -> C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\build\collision_avoidance\build\lib\collision_avoidance
+[5.500s] running install
+[5.500s] running install_lib
+[5.563s] copying C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\build\collision_avoidance\build\lib\collision_avoidance\avoid_collision.py -> C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\collision_avoidance\Lib\site-packages\collision_avoidance
+[5.563s] byte-compiling C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\collision_avoidance\Lib\site-packages\collision_avoidance\avoid_collision.py to avoid_collision.cpython-311.pyc
+[5.578s] running install_data
+[5.578s] copying resource\collision_avoidance -> C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\collision_avoidance\share\ament_index\resource_index\packages
+[5.578s] copying package.xml -> C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\collision_avoidance\share\collision_avoidance
+[5.578s] running install_egg_info
+[5.641s] removing 'C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\collision_avoidance\Lib\site-packages\collision_avoidance-0.0.0-py3.11.egg-info' (and everything under it)
+[5.641s] Copying ..\..\build\collision_avoidance\collision_avoidance.egg-info to C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\collision_avoidance\Lib\site-packages\collision_avoidance-0.0.0-py3.11.egg-info
+[5.656s] running install_scripts
+[6.313s] Installing avoid_collision-script.py script to C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\collision_avoidance\lib\collision_avoidance
+[6.313s] Installing avoid_collision.exe script to C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\collision_avoidance\lib\collision_avoidance
+[6.313s] writing list of installed files to 'C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\build\collision_avoidance\install.log'
+[6.406s] Invoked command in 'C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\src\collision_avoidance' returned '0': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\build\collision_avoidance\prefix_override;C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\install\collision_avoidance\Lib\site-packages;%PYTHONPATH% C:\Users\pmran\anaconda3\envs\ros_env\python.exe -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ..\..\build\collision_avoidance build --build-base C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\build\collision_avoidance\build install --record C:\Users\pmran\Documents\MAS\3rd_semester\AST\IsaacSim\simulation_ws\build\collision_avoidance\install.log --single-version-externally-managed install_data
