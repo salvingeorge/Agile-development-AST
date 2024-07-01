@@ -1,7 +1,6 @@
 import unittest
 import rclpy
 
-from rclpy.node import Node
 from std_msgs.msg import Float32
 from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
