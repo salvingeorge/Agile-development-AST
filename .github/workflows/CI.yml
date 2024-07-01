@@ -31,7 +31,7 @@ jobs:
     - name: Setup ROS 2 workspace
       run: |
         mkdir -p ~/ros2_smach/src
-        ln -s $GITHUB_WORKSPACE ~/ros2_smach/src/
+        ln -s $GITHUB_WORKSPACE/ros2_smach ~/ros2_smach/src/
         cd ~/ros2_smach
         rosdep update
         rosdep install --from-paths src --ignore-src -r -y
