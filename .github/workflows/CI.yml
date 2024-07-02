@@ -31,6 +31,7 @@ jobs:
           ros-humble-launch-testing-ament-cmake \
           python3-pip
         pip3 uninstall -y em || true
+        sudo rm -f /usr/local/bin/em.py
         pip3 install empy catkin_pkg colcon-common-extensions colcon-core
         
     - name: Setup ROS 2 workspace
