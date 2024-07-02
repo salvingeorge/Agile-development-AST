@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       
     - name: Setup ROS 2
-      uses: ros-tooling/setup-ros@v0.3
+      uses: ros-tooling/setup-ros@v0.6
       with:
         required-ros-distributions: humble
 
@@ -40,13 +40,15 @@ jobs:
         ln -s $GITHUB_WORKSPACE ~/ros2_smach/src
         cd ~/ros2_smach
         rosdep update
-        rosdep install --from-paths src --ignore-src -r -y --skip-keys="pkg_move robot"
+        rosdep install --from-paths src --ignore-src -r -y --rosdistro humble --skip-keys="pkg_move robot"
+
 
     - name: Build the workspace
       run: |
         source /opt/ros/humble/setup.bash
         cd ~/ros2_smach
-        colcon build --packages-select state_machine
+        colcon build --packages-select state_machine --event-handlers console_direct+
+        
     - name: Ensuring log directory exists
       run: mkdir -p ~/ros2_smach/log/latest_test
 
@@ -54,14 +56,14 @@ jobs:
       run: |
         source /opt/ros/humble/setup.bash
         cd ~/ros2_smach
-        colcon test --packages-select state_machine
-        colcon test-result --all --result-base ~/ros2_smach/log/latest_test
+        colcon test --packages-select state_machine --event-handlers console_direct+
+        colcon test-result --verbose
     - name: Upload Logs
       if: always()
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: colcon-logs
-        path: ~/ros2_smach/log/latest_test
+        path: ~/ros2_smach/log
         
         
 
