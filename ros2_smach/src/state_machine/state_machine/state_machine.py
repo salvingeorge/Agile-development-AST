@@ -39,7 +39,7 @@ class MonitorBatteryAndCollision(smach.State):
         rclpy.spin_once(self.node, timeout_sec=0.1)
         # Check battery level and collision status here
         if self.battery_level is not None and self.battery_level < self.battery_threshold:
-            return 'low_battery'
+            return 'good_battery'
         elif self.collision_distance is not None and self.collision_distance < self.distance_threshold:
             return 'collision'
         elif self.collision_distance is not None and self.collision_distance < self.avoid_distance:
