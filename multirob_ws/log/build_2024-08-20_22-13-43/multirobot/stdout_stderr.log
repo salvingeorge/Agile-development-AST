@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/multirobot/multirobot.egg-info/PKG-INFO
+writing dependency_links to ../../build/multirobot/multirobot.egg-info/dependency_links.txt
+writing entry points to ../../build/multirobot/multirobot.egg-info/entry_points.txt
+writing requirements to ../../build/multirobot/multirobot.egg-info/requires.txt
+writing top-level names to ../../build/multirobot/multirobot.egg-info/top_level.txt
+reading manifest file '../../build/multirobot/multirobot.egg-info/SOURCES.txt'
+writing manifest file '../../build/multirobot/multirobot.egg-info/SOURCES.txt'
+running build
+running build_py
+copying multirobot/launch_robile.launch.py -> /home/muni/Documents/ast/Agile-development-AST/multirob_ws/build/multirobot/build/lib/multirobot
+running install
+running install_lib
+copying /home/muni/Documents/ast/Agile-development-AST/multirob_ws/build/multirobot/build/lib/multirobot/launch_robile.launch.py -> /home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/lib/python3.10/site-packages/multirobot
+byte-compiling /home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/lib/python3.10/site-packages/multirobot/launch_robile.launch.py to launch_robile.launch.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/lib/python3.10/site-packages/multirobot-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/multirobot/multirobot.egg-info to /home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/lib/python3.10/site-packages/multirobot-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/muni/Documents/ast/Agile-development-AST/multirob_ws/build/multirobot/install.log'

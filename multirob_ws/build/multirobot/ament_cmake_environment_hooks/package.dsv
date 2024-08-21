@@ -1,0 +1,4 @@
+source;share/multirobot/local_setup.bash
+source;share/multirobot/local_setup.dsv
+source;share/multirobot/local_setup.sh
+source;share/multirobot/local_setup.zsh

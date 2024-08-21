@@ -1,0 +1,15 @@
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/ament_index/resource_index/package_run_dependencies/multirobot
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/ament_index/resource_index/parent_prefix_path/multirobot
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/environment/ament_prefix_path.sh
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/environment/ament_prefix_path.dsv
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/environment/path.sh
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/environment/path.dsv
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/local_setup.bash
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/local_setup.sh
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/local_setup.zsh
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/local_setup.dsv
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/package.dsv
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/ament_index/resource_index/packages/multirobot
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/cmake/multirobotConfig.cmake
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/cmake/multirobotConfig-version.cmake
+/home/muni/Documents/ast/Agile-development-AST/multirob_ws/install/multirobot/share/multirobot/package.xml
