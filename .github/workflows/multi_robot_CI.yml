@@ -53,7 +53,7 @@ jobs:
       run: |
         source /opt/ros/humble/setup.bash
         cd ~/multirob_ws
-        colcon test --packages-select state_machine --event-handlers console_direct+
+        colcon test --packages-select multirobot --event-handlers console_direct+
         colcon test-result --verbose
     - name: Upload Logs
       if: always()
